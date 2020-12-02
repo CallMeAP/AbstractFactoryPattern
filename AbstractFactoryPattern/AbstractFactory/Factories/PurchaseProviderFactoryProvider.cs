@@ -7,13 +7,13 @@ using AbstractFactoryPattern.Business.Models.Enums;
 
 namespace AbstractFactoryPattern.AbstractFactory.Factories
 {
-    public class PruchaseProviderFactoryProvider
+    public class PurchaseProviderFactoryProvider
     {
         private IEnumerable<Type> factories;
 
-        public PruchaseProviderFactoryProvider()
+        public PurchaseProviderFactoryProvider()
         {
-            factories = Assembly.GetAssembly(typeof(PruchaseProviderFactoryProvider))
+            factories = Assembly.GetAssembly(typeof(PurchaseProviderFactoryProvider))
                 .GetTypes()
                 .Where(t => typeof(IPurchaseProviderFactory).IsAssignableFrom(t));
         }

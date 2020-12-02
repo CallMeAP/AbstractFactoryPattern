@@ -51,7 +51,7 @@ namespace AbstractFactoryPattern
 
             // Factory Provider
             IPurchaseProviderFactory purchaseProviderFactory;
-            var factoryProvider = new PruchaseProviderFactoryProvider();
+            var factoryProvider = new PurchaseProviderFactoryProvider();
             purchaseProviderFactory = factoryProvider.CreateFactoryFor(order.Sender.Country);
 
             AbstractFactoryPattern.AbstractFactory.ShoppingCart cart3 = new AbstractFactoryPattern.AbstractFactory.ShoppingCart(order, purchaseProviderFactory);
