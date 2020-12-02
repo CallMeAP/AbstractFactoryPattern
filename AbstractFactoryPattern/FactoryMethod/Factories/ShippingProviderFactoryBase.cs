@@ -13,7 +13,7 @@ namespace AbstractFactoryPattern.FactoryMethod.Factories
         {
             ShippingProviderBase provider = CreateShippingProvider(country);
 
-            // place code here, that is common for all your shipping provider
+            // place code here, that is common for all your shipping providers
             // example if country == Country.Austria then requireAdditionalChecks = false
 
             return provider;
