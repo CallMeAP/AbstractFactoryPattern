@@ -2,7 +2,7 @@
 
 namespace AbstractFactoryPattern.AbstractFactory.Factories
 {
-    public class GlobalShippingProviderFactory : ShippingProviderFactoryBase
+    public class ShippingProviderFactoryGlobal : ShippingProviderFactoryBase
     {
         protected override ShippingProviderBase CreateShippingProvider(Country country)
         {

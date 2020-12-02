@@ -3,7 +3,7 @@ using AbstractFactoryPattern.FactoryMethod.Factories;
 
 namespace AbstractFactoryPattern.AbstractFactory.Factories
 {
-    public class StandardShippingProviderFactory : ShippingProviderFactoryBase
+    public class ShippingProviderFactoryStandard : ShippingProviderFactoryBase
     {
         // creates an instance of an shippingprovider, based on the order country
         protected override ShippingProviderBase CreateShippingProvider(Country country)
